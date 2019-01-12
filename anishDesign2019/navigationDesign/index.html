@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Anish </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+</head>
+<body>
+    <nav class="navbar">
+      <a class="navbar-brand" href="#"> 
+        Brand
+      </a>
+      <div class="hamburger"> 
+        <span> </span>
+        <span> </span>
+        <span> </span>
+      </div>
+      <div class="navbar-wrapper">
+        <ul id="nav">
+            <li> <a href="#"> Home </a></li>
+            <li> <a href="#"> Overview </a></li>
+            <li> <a href="#"> Prices </a></li>
+            <li> <a href="#"> Purchase </a></li>
+          </ul>
+      </div>
+    </nav>
+
+    <div class="cover">
+
+    </div>
+
+    <script>
+      var hamburger = document.querySelector('.hamburger');
+      var navbarWrapper = document.querySelector('.navbar-wrapper');
+      var navbarClose = document.querySelector('.hamburger.change');
+
+
+      function hamburgerClick(e) {
+       hamburger.classList.toggle('change');
+       navbarWrapper.classList.toggle('navbar-toggle');
+      }
+
+      hamburger.addEventListener('click', hamburgerClick);
+      
+
+    </script>
+</body>
+</html>
